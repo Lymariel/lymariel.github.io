@@ -1,8 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Audiowide);
-
 h1 {
   color: #fff;
-  font-family: "Audiowide", cursive;
+  font-family: "Cinzel decorative", cursive;
   font-size: 2em;
   font-size: 6vw;
   line-height: 40%;
@@ -74,16 +72,17 @@ background-position:10% 60%;
   background-image: url("http://www.kedvenclekvarom.hu/31/fruit-de-bereg-500g-szilvalekvar-szilkeben.jpg");
 }
 
-.slide-two{
-  background-image: url("http://m.cdn.blog.hu/it/itthoneszakalfoldon/image/Szatm%C3%A1ri%20Fesztiv%C3%A1l_Penyige_tom.JPG");
-}
+.slide-two{background-image: url('http://m.cdn.blog.hu/it/itthoneszakalfoldon/image/Szatm%C3%A1ri%20Fesztiv%C3%A1l_Penyige_tom.JPG');}
+.slide-two:hover {background:rgba(225,225,225,0.5);  -webkit-transition: left .65s ease-out;
+  transition: left .65s ease-out;}
 
-.slide-two:hover {background:rgba(225,225,225,0.5);}
-.slide-three {
-  background-image: url("http://m.cdn.blog.hu/it/itthoneszakalfoldon/image/Szatm%C3%A1ri%20Fesztiv%C3%A1l_Penyige_tom.JPG");
-}
+.slide-two section {opacity:0;}
+.slide-two:hover section {opacity:1;}
+.slide-two img {opacity:0}
+.slide-two:hover img {opacity:1}
+
 .slide-four {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/lakehouse.jpg");
+  background-image: url('http://i.imgur.com/dp0yQdW.jpg');
 }
 .slide h1 {
   opacity: 0;
@@ -110,16 +109,14 @@ background-position:10% 60%;
 }
 
 
-body, h3 {
-  background: url('http://www.wallpapereast.com/static/images/blue-pattern.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body {
+  background: url('http://i.imgur.com/dp0yQdW.jpg') no-repeat center center fixed;background-size: cover;
   text-align: center;
   text-transform: uppercase;
   font-family: sans-serif;
 }
+
+h3 {background: url('http://i.imgur.com/c5q4TuE.jpg')}
 
 
 #wrapper {
@@ -145,7 +142,7 @@ h4 {
   color: #FFF;
   font-weight: 100;
   font-family: "Fredoka One";
-  font-size: 50px;
+  font-size: 65px;
  background-image:url('http://blueblots.com/wp-content/uploads/2010/02/16-Bandwidth-Blue-pattern.jpg');  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   letter-spacing: 5px;
@@ -155,25 +152,12 @@ h4 {
 }
 
 h3 {
-  font-family:sarif;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  padding: 0 20px;
-  font-size: 30px;font-family:Comfortaa
+  padding: 0 15px;
+  font-size: 35px;font-family:Comfortaa
 }
 
-@media all and (max-width: 480px){
-  h4 {
-    padding: 0 0 25px 0;
-    font-size: 12vw;
-  }
-  
-  
-  
-  h3 {
-    font-size: 7vw;
-  }
-}
 
 
 
@@ -191,17 +175,10 @@ h3 {
   height: 450px;
   position: absolute;
   border: 2px solid rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
-  -moz-transform: skew(-30deg, 0deg);
   -webkit-transform: skew(-30deg, 0deg);
-  -o-transform: skew(-30deg, 0deg);
-  -ms-transform: skew(-30deg, 0deg);
   transform: skew(-30deg, 0deg);
   -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .wrapper2 .screenshot:nth-child(1) {
@@ -212,10 +189,7 @@ h3 {
 }
 .wrapper2:hover .screenshot {
   margin-top: 0px;
-  -moz-transform: skew(0deg, 0deg);
   -webkit-transform: skew(0deg, 0deg);
-  -o-transform: skew(0deg, 0deg);
-  -ms-transform: skew(0deg, 0deg);
   transform: skew(0deg, 0deg);
 }
 .wrapper2:hover .screenshot:nth-child(1) {
@@ -226,4 +200,95 @@ h3 {
 }
 .wrapper2:hover .screenshot:nth-child(3) {
   margin-left: 150px;
+}
+
+
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+.column {
+  width: 20%;
+  padding: 2%;
+  height: 100%;
+  float: left;
+  margin: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.column:hover {cursor:none}
+.column.wide {
+  width: 40% !important;
+}
+.column#red {
+  background: #F25648;
+}
+.column#orange {
+  background: #FC7B16;
+}
+.column#yellow {
+  background: #FEE532;
+}
+.column#green {
+  background: #23AF4C;
+}
+.column#blue {
+  background: #42B4E6;
+}
+.column:hover p {
+  opacity: 1;
+}
+
+p {
+  color: #fff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+
+
+.container {
+  margin: 20px auto;
+  width: 580px;
+}
+
+article {
+	display: table;
+  margin: 1.5em 0;
+  width: 100%;
+}
+
+section.left {
+	display: table-cell;
+	width: 10%;
+  vertical-align: middle;line-height:270%;text-align:left
+}
+
+section.right {
+  display: table-cell;
+  width: 90%;line-height:270%;text-align:left
+}
+
+.left span {
+	display: block;
+	position: relative;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #37abc8;
+  font-weight: bold;
+  background-color: pink;
+  font-size: 1.2em;
 }
