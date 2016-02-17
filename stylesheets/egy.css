@@ -325,3 +325,8 @@ section.right {
   font-size: 50px;
   margin-left: 90px
 }
+
+
+
+.szszvideo {position:fixed;bottom:0px;right:10px;opacity:0}
+.szszvideo:hover {opacity:1}
