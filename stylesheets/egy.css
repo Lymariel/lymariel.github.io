@@ -22,14 +22,30 @@ body {
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #434D69;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #434D69;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #2C3346;
+}
+
 .wrap {
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
   background: #120103;
-  color: #fff;
+  color: #8CA0DB;
   text-align: center;
+  text-shadow: 2px 2px black
 }
 
 header {
@@ -42,9 +58,39 @@ header {
   width: 100%;
 }
 
+span.hili {
+  background: #889BD5;
+  position: relative;
+  color: #434D69
+}
+
+span.hili:hover {
+  background: #434D69;
+  z-index: 6;
+  cursor: help;
+  color: #889BD5
+}
+
+span.hili:hover span {
+  left: 1%;
+}
+
+span.hili span {
+  position: absolute;
+  left: -9999px;
+  margin: 4px 0 0 0px;
+  padding: 2px;
+}
+
+span.hili:hover span {
+  margin: 20px 0 0 10px;
+  z-index: 6;
+}
+
 header label {
   color: #163058;
   cursor: pointer;
+  text-shadow: none;
   display: inline-block;
   line-height: 4.25em;
   font-size: .75em;
@@ -70,6 +116,7 @@ header label:hover {
   background-size: cover;
   -webkit-transition: left 0s .75s;
   transition: left 0s .75s;
+  overflow: auto
 }
 
 .slide-one {
@@ -138,7 +185,8 @@ body {
 }
 
 h3 {
-  background: url('http://i.imgur.com/c5q4TuE.jpg')
+  background: url('http://i.imgur.com/c5q4TuE.jpg');
+  text-shadow: none
 }
 
 #wrapper {
@@ -161,8 +209,7 @@ h3 {
 }
 
 h4 {
-  color: #FFF;
-  font-weight: 100;
+  text-shadow: none;
   font-family: "Fredoka One";
   font-size: 65px;
   background-image: url('http://blueblots.com/wp-content/uploads/2010/02/16-Bandwidth-Blue-pattern.jpg');
@@ -276,4 +323,5 @@ section.right {
   text-shadow: 1px 1px black;
   box-shadow: 1px 1px black;
   font-size: 50px;
+  margin-left: 90px
 }
