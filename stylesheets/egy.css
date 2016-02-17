@@ -1,11 +1,11 @@
 h1 {
-  color: #fff;
+  color: #616f98;
   font-family: "Cinzel decorative", cursive;
   font-size: 2em;
   font-size: 6vw;
   line-height: 40%;
-  margin-top:-40px;
-  text-shadow: 1px 1px 1px #333;
+  margin-top: -40px;
+  text-shadow: 1px 1px 1px #000;
 }
 
 @media (min-width: 67.1875em) {
@@ -13,6 +13,7 @@ h1 {
     font-size: 4em;
   }
 }
+
 html,
 body {
   height: 100%;
@@ -32,7 +33,7 @@ body {
 }
 
 header {
-  background: #3E474F;
+  background: #434D69;
   box-shadow: 0 .5em 1em #111;
   position: absolute;
   top: 0;
@@ -40,8 +41,9 @@ header {
   z-index: 900;
   width: 100%;
 }
+
 header label {
-  color: #788188;
+  color: #163058;
   cursor: pointer;
   display: inline-block;
   line-height: 4.25em;
@@ -51,7 +53,8 @@ header label {
 }
 
 header label:hover {
-  background: #2e353b;
+  background: #163058;
+  color: #8CA6DE
 }
 
 .slide {
@@ -62,32 +65,49 @@ header label:hover {
   left: 100%;
   z-index: 10;
   padding: 8em 1em 0;
-  background-color: #120103;
-background-position:10% 60%;
+  background-image: url('http://i.imgur.com/dp0yQdW.jpg');
+  background-position: 10% 60%;
   background-size: cover;
   -webkit-transition: left 0s .75s;
   transition: left 0s .75s;
 }
+
 .slide-one {
   background-image: url("http://www.kedvenclekvarom.hu/31/fruit-de-bereg-500g-szilvalekvar-szilkeben.jpg");
 }
 
-.slide-two{background-image: url('http://m.cdn.blog.hu/it/itthoneszakalfoldon/image/Szatm%C3%A1ri%20Fesztiv%C3%A1l_Penyige_tom.JPG');}
-.slide-two:hover {background:rgba(225,225,225,0.5);  -webkit-transition: left .65s ease-out;
-  transition: left .65s ease-out;}
+.slide-two {
+  background-image: url('http://m.cdn.blog.hu/it/itthoneszakalfoldon/image/Szatm%C3%A1ri%20Fesztiv%C3%A1l_Penyige_tom.JPG');
+}
 
-.slide-two section {opacity:0;}
-.slide-two:hover section {opacity:1;}
-.slide-two img {opacity:0}
-.slide-two:hover img {opacity:1}
+.slide-two:hover {
+  background-image: url('http://i.imgur.com/dp0yQdW.jpg')
+}
+
+.slide-two section {
+  opacity: 0;
+}
+
+.slide-two:hover section {
+  opacity: 1;
+}
+
+.slide-two img {
+  opacity: 0
+}
+
+.slide-two:hover img {
+  opacity: 1
+}
 
 .slide-four {
   background-image: url('http://i.imgur.com/dp0yQdW.jpg');
 }
+
 .slide h1 {
   opacity: 0;
   -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  transform: translateY(100%);
   -webkit-transition: opacity .5s, -webkit-transform .5s .5s;
   transition: opacity .5s, -webkit-transform .5s .5s;
   transition: transform .5s .5s, opacity .5s;
@@ -100,29 +120,31 @@ background-position:10% 60%;
   -webkit-transition: left .65s ease-out;
   transition: left .65s ease-out;
 }
+
 [id^="slide"]:checked + .slide h1 {
   opacity: 1;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   -webkit-transition: all .5s .5s;
   transition: all .5s .5s;
 }
 
-
 body {
-  background: url('http://i.imgur.com/dp0yQdW.jpg') no-repeat center center fixed;background-size: cover;
+  background: url('http://i.imgur.com/dp0yQdW.jpg') no-repeat center center fixed;
+  background-size: cover;
   text-align: center;
   text-transform: uppercase;
   font-family: sans-serif;
 }
 
-h3 {background: url('http://i.imgur.com/c5q4TuE.jpg')}
-
+h3 {
+  background: url('http://i.imgur.com/c5q4TuE.jpg')
+}
 
 #wrapper {
   display: inline-block;
   border: 10px double #182559;
-   background:rgba(156, 191, 249,0.5)
+  background: rgba(156, 191, 249, 0.5)
 }
 
 .whitebox {
@@ -133,9 +155,9 @@ h3 {background: url('http://i.imgur.com/c5q4TuE.jpg')}
 }
 
 .white {
-  background-color:rgba(144, 170, 227,1);
-  display: inline-block;  box-shadow: 0 0 0px #000000, 0 0 40px #1C3762 inset;
-
+  background-color: rgba(144, 170, 227, 1);
+  display: inline-block;
+  box-shadow: 0 0 0px #000000, 0 0 40px #1C3762 inset;
 }
 
 h4 {
@@ -143,73 +165,28 @@ h4 {
   font-weight: 100;
   font-family: "Fredoka One";
   font-size: 65px;
- background-image:url('http://blueblots.com/wp-content/uploads/2010/02/16-Bandwidth-Blue-pattern.jpg');  -webkit-text-fill-color: transparent;
+  background-image: url('http://blueblots.com/wp-content/uploads/2010/02/16-Bandwidth-Blue-pattern.jpg');
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   letter-spacing: 5px;
-  padding: 0 30px; 
-
-
+  padding: 0 30px;
 }
 
 h3 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   padding: 0 15px;
-  font-size: 35px;font-family:Comfortaa
+  font-size: 35px;
+  font-family: Comfortaa
 }
 
-
-
-
-
-
-.wrapper2 {
-  width: 100%;
-  position: relative;
-  margin: 0px auto;left:-500px;opacity:0
-}
-
-.wrapper2:hover {opacity:1}
-.wrapper2 .screenshot {
-  width: auto;
-  height: 450px;
-  position: absolute;
-  border: 2px solid rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
-  -webkit-transform: skew(-30deg, 0deg);
-  transform: skew(-30deg, 0deg);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-.wrapper2 .screenshot:nth-child(1) {
-  margin-top: 160px;
-}
-.wrapper2 .screenshot:nth-child(2) {
-  margin-top: 80px;
-}
-.wrapper2:hover .screenshot {
-  margin-top: 0px;
-  -webkit-transform: skew(0deg, 0deg);
-  transform: skew(0deg, 0deg);
-}
-.wrapper2:hover .screenshot:nth-child(1) {
-  margin-left: 800px;
-}
-.wrapper2:hover .screenshot:nth-child(2) {
-  margin-left: -190px;
-}
-.wrapper2:hover .screenshot:nth-child(3) {
-  margin-left: 150px;
-}
-
-
-
-
-
-*, *:before, *:after {
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 
 .column {
   width: 20%;
@@ -217,28 +194,33 @@ h3 {
   height: 100%;
   float: left;
   margin: 0;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.column:hover {cursor:none}
-.column.wide {
-  width: 40% !important;
+
+.column:hover {
+  cursor: none
 }
+
+.column.wide {
+  width: 55% !important;
+}
+
 .column#red {
   background: #F25648;
 }
+
 .column#orange {
   background: #FC7B16;
 }
+
 .column#yellow {
   background: #FEE532;
 }
+
 .column#green {
   background: #23AF4C;
 }
-.column#blue {
-  background: #42B4E6;
-}
+
 .column:hover p {
   opacity: 1;
 }
@@ -249,46 +231,49 @@ p {
   font-family: Arial, sans-serif;
   font-weight: bold;
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-
-
-
 .container {
-  margin: 20px auto;
   width: 580px;
 }
 
 article {
-	display: table;
+  display: table;
   margin: 1.5em 0;
   width: 100%;
 }
 
 section.left {
-	display: table-cell;
-	width: 10%;
-  vertical-align: middle;line-height:270%;text-align:left
+  display: table-cell;
+  width: 10%;
+  vertical-align: middle;
+  line-height: 270%;
+  text-align: left
 }
 
 section.right {
   display: table-cell;
-  width: 90%;line-height:270%;text-align:left
+  width: 90%;
+  line-height: 200%;
+  text-align: left;
+  font-size: 18px;
+  float: right
 }
 
 .left span {
-	display: block;
-	position: relative;
-  height: 40px;
-  width: 40px;
+  display: block;
+  position: relative;
+  height: 60px;
+  width: 60px;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 0%;
   text-align: center;
-  line-height: 40px;
-  color: #37abc8;
+  line-height: 60px;
+  color: #3C4660;
   font-weight: bold;
-  background-color: pink;
-  font-size: 1.2em;
+  background-color: #4B5879;
+  text-shadow: 1px 1px black;
+  box-shadow: 1px 1px black;
+  font-size: 50px;
 }
